@@ -11,12 +11,12 @@ interface CallToAction {
 
 export default function MainHeader() {
   const CTA: CallToAction = {
-    text: "Free Chrome Add-on",
-    url: "/chrome-extension",
+    text: "Get Started",
+    url: "/get-started",
   };
   const secondaryCTA: CallToAction = {
-    text: "Online Citation Generator",
-    url: "/online-citation-generator",
+    text: "Sign in",
+    url: "/sign-in",
   };
 
   return (
@@ -31,8 +31,8 @@ export default function MainHeader() {
                 <h2 className="inline-flex items-center text-xl font-bold text-gray-800">
                   <Image
                     src="/logos/logo-red.svg"
-                    width="24"
-                    height="24"
+                    width="28"
+                    height="28"
                     alt=""
                     className="f-l"
                   />
@@ -85,8 +85,8 @@ export default function MainHeader() {
                     <h2 className="inline-flex items-center text-2xl font-bold text-gray-800">
                       <Image
                         src="/logos/logo-red.svg"
-                        width="300"
-                        height="300"
+                        width="32"
+                        height="32"
                         alt=""
                         className="f-l"
                       />

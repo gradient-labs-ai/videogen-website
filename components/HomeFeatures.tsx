@@ -21,7 +21,7 @@ export default function HomeFeatures() {
               </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                  Cite any source in 2 clicks
+                  Generate Videos In Seconds
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   VideoGen is a free browser add-on that generates
@@ -34,7 +34,7 @@ export default function HomeFeatures() {
                     href={webStoreLink}
                     className="inline-flex rounded-lg bg-main-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-main-600 hover:bg-main-700 hover:ring-main-700"
                   >
-                    Add to Chrome - It&apos;s Free
+                    Generate Video - It&apos;s Free
                   </a>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function HomeFeatures() {
                 muted
                 loop
                 playsInline
-                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                className="h-max rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-fit lg:w-auto lg:max-w-none"
                 src="/videos/demo.mp4"
                 poster="/images/demo.jpg"
               ></video>
