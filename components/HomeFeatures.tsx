@@ -24,7 +24,7 @@ export default function HomeFeatures() {
                   Cite any source in 2 clicks
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Citation Hero is a free browser add-on that generates
+                  VideoGen is a free browser add-on that generates
                   formatted citations for websites, books, journal articles, and
                   more in various formats, including APA, MLA, Chicago, and
                   Harvard.
@@ -43,7 +43,7 @@ export default function HomeFeatures() {
               <blockquote>
                 <div>
                   <p className="text-base text-gray-500">
-                    &ldquo;Citation Hero is a lifesaver... I used to spend
+                    &ldquo;VideoGen is a lifesaver... I used to spend
                     forever trying to properly format my citations–now it takes
                     seconds.&rdquo;
                   </p>
@@ -89,7 +89,7 @@ export default function HomeFeatures() {
                   Add in seconds
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Getting started with Citation Hero is quick and easy. Simply
+                  Getting started with VideoGen is quick and easy. Simply
                   visit the Chrome Web Store and add the extension to your
                   browser. Once installed, you can start using it right away.
                 </p>

@@ -5,7 +5,7 @@ export default function HomeCta() {
         <div className="px-6 pt-10 pb-12 sm:px-16 sm:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
           <div className="lg:self-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              <span className="block">Save time with Citation Hero.</span>
+              <span className="block">Save time with VideoGen.</span>
               <span className="block">No sign up required!</span>
             </h2>
             <a

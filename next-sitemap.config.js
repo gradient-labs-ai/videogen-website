@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://citationhero.io",
+  siteUrl: process.env.SITE_URL || "https://videogen.io",
   generateRobotsTxt: true, // (optional)
-  exclude: ["/extension-window", "/kahoot/*"],
+  exclude: [],
   // ...other options
 };

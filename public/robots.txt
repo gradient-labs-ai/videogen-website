@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://citationhero.io
+Host: https://videogen.io
 
 # Sitemaps
-Sitemap: https://citationhero.io/sitemap.xml
+Sitemap: https://videogen.io/sitemap.xml

@@ -30,13 +30,13 @@ export default function MainHeader() {
 
                 <h2 className="inline-flex items-center text-xl font-bold text-gray-800">
                   <Image
-                    src="/logos/logo-green.svg"
+                    src="/logos/logo-red.svg"
                     width="24"
                     height="24"
                     alt=""
                     className="f-l"
                   />
-                  &nbsp;&nbsp;Citation Hero
+                  &nbsp;&nbsp;VideoGen
                 </h2>
               </Link>
             </div>
@@ -84,13 +84,13 @@ export default function MainHeader() {
                   <div>
                     <h2 className="inline-flex items-center text-2xl font-bold text-gray-800">
                       <Image
-                        src="/logos/logo-green.svg"
-                        width="28"
-                        height="28"
+                        src="/logos/logo-red.svg"
+                        width="300"
+                        height="300"
                         alt=""
                         className="f-l"
                       />
-                      &nbsp;&nbsp;Citation Hero
+                      &nbsp;&nbsp;VideoGen
                     </h2>
                   </div>
                   <div className="-mr-2">

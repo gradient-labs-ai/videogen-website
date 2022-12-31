@@ -7,8 +7,7 @@ interface IconProps {
 }
 const navigation = {
   tools: [
-    { name: "Online Citation Generator", href: "/online-citation-generator" },
-    { name: "Chrome Extension", href: "/chrome-extension" },
+    { name: "AI Video Generator", href: "/ai-video-generator" },
   ],
   resources: [
     { name: "APA", href: "/guides/apa" },
