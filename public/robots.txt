@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://citationhero.io
+
+# Sitemaps
+Sitemap: https://citationhero.io/sitemap.xml

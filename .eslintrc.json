@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@next/next/no-img-element": 1, // Warning
+    "@next/next/no-html-link-for-pages": 2 // Improves SEO
+  }
+}
