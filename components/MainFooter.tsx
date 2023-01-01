@@ -6,8 +6,10 @@ interface IconProps {
   "aria-hidden": string;
 }
 const navigation = {
-  tools: [
-    { name: "AI Video Generator", href: "/ai-video-generator" },
+  templates: [
+    { name: "Short-Form Bot", href: "/ai-video-generator" },
+    { name: "Reddit Bot", href: "/reddit-bot" },
+    { name: "Twitter Bot", href: "/reddit-bot" },
   ],
   resources: [
     { name: "APA", href: "/guides/apa" },
@@ -94,9 +96,9 @@ export default function MainFooter() {
           <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-base font-medium text-gray-900">Tools</h3>
+                <h3 className="text-base font-medium text-gray-900">Templates</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.tools.map((item) => (
+                  {navigation.templates.map((item) => (
                     <li key={item.name}>
                       <Link
                         href={item.href}

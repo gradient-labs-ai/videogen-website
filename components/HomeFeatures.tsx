@@ -1,120 +1,130 @@
-import Image from "next/image";
+import {
+  MapPinIcon,
+  ChatBubbleBottomCenterTextIcon,
+  EnvelopeIcon,
+  QuestionMarkCircleIcon,
+  BanknotesIcon,
+} from '@heroicons/react/24/outline'
+
+const transferFeatures = [
+  {
+    id: 1,
+    name: 'Stay anonymous',
+    description:
+      'Lorum ispum sit amet dolar, iste dolor cupiditate blanditiis ratione.',
+    icon: QuestionMarkCircleIcon,
+  },
+  {
+    id: 2,
+    name: 'Save on voice actors',
+    description:
+      'Lorum ispum sit amet dolar, iste dolor cupiditate blanditiis.',
+    icon: BanknotesIcon,
+  },
+  {
+    id: 3,
+    name: 'Stay on target',
+    description:
+      'Custom taylor voices to your audience\'s preference.',
+    icon: MapPinIcon,
+  },
+]
+const communicationFeatures = [
+  {
+    id: 1,
+    name: 'Mobile notifications',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    icon: ChatBubbleBottomCenterTextIcon,
+  },
+  {
+    id: 2,
+    name: 'Reminder emails',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    icon: EnvelopeIcon,
+  },
+]
 
 export default function HomeFeatures() {
-  const webStoreLink =
-    "https://chrome.google.com/webstore/detail/citation-hero/iojgjmcdmcekjmflcnmmcflcjmkmjmfi";
   return (
-    <div className="relative overflow-hidden bg-white pt-16 pb-32">
-      <div className="relative">
-        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-          <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
-            <div>
-              <div>
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-main-600">
-                  <Image
-                    src="/logos/logo-white.svg"
-                    width="24"
-                    height="24"
-                    alt=""
-                  />
-                </span>
-              </div>
-              <div className="mt-6">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                  Generate Videos In Seconds
-                </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  VideoGen is a free browser add-on that generates
-                  formatted citations for websites, books, journal articles, and
-                  more in various formats, including APA, MLA, Chicago, and
-                  Harvard.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href={webStoreLink}
-                    className="inline-flex rounded-lg bg-main-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-main-600 hover:bg-main-700 hover:ring-main-700"
-                  >
-                    Generate Video - It&apos;s Free
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 border-t border-gray-200 pt-6">
-              <blockquote>
-                <div>
-                  <p className="text-base text-gray-500">
-                    &ldquo;VideoGen is a lifesaver... I used to spend
-                    forever trying to properly format my citations–now it takes
-                    seconds.&rdquo;
-                  </p>
-                </div>
-                <footer className="mt-3">
-                  <div className="flex items-center space-x-3">
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-6 w-6 rounded-full"
-                        src="https://socialhelix.io/dist/images/david.jpg"
-                        alt=""
-                      />
+    <div className="overflow-hidden bg-gray-50 py-16 lg:py-24">
+      <div className="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
+
+        <div className="relative">
+          <h2 className="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">    
+            <span className="block">VideoGen is not a video editor.</span>
+            <span className="block">It&apos;s a video <span className="italic bg-gradient-to-br font-extrabold text-transparent bg-clip-text from-secondary-500 to-main-500">generator</span>.</span>
+          </h2>
+        </div>
+
+        <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+          <div className="relative">
+            <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Lifelike voice synthesis</h3>
+            <p className="mt-3 text-lg text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
+            </p>
+            <dl className="mt-10 space-y-10">
+              {transferFeatures.map((item) => (
+                <div key={item.id} className="relative">
+                  <dt>
+                    <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-main-500 text-white">
+                      <item.icon className="h-8 w-8" aria-hidden="true" />
                     </div>
-                    <div className="text-base font-medium text-gray-700">
-                      David Grossman, Student
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-            </div>
+                    <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
+                  </dt>
+                  <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0">
-            <div className="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="h-max rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-fit lg:w-auto lg:max-w-none"
-                src="/videos/demo.mp4"
-                poster="/images/demo.jpg"
-              ></video>
-            </div>
+
+          <div className="relative -mx-4 mt-10 lg:mt-0" aria-hidden="true">
+            <img
+              className="relative mx-auto"
+              width={490}
+              src="https://tailwindui.com/img/features/feature-example-1.png"
+              alt=""
+            />
           </div>
         </div>
-      </div>
-      <div className="mt-24">
-        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-          <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
-            <div>
-              <div className="mt-6">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                  Add in seconds
-                </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  Getting started with VideoGen is quick and easy. Simply
-                  visit the Chrome Web Store and add the extension to your
-                  browser. Once installed, you can start using it right away.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href={webStoreLink}
-                    className="inline-flex rounded-lg bg-main-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-main-600 hover:bg-main-700 hover:ring-main-700"
-                  >
-                    Add to Chrome - It&apos;s Free
-                  </a>
-                </div>
-              </div>
+
+        <div className="relative mt-12 sm:mt-16 lg:mt-24">
+          <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
+            <div className="lg:col-start-2">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">AI-powered video templates</h3>
+              <p className="mt-3 text-lg text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
+                cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
+              </p>
+
+              <dl className="mt-10 space-y-10">
+                {communicationFeatures.map((item) => (
+                  <div key={item.id} className="relative">
+                    <dt>
+                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-main-500 text-white">
+                        <item.icon className="h-8 w-8" aria-hidden="true" />
+                      </div>
+                      <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
+                    </dt>
+                    <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
+                  </div>
+                ))}
+              </dl>
             </div>
-          </div>
-          <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
-            <div className="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+
+            <div className="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
+
               <img
-                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://media.istockphoto.com/id/469066852/photo/diverse-mid-adult-students-using-computers-during-class-in-college.jpg?b=1&s=170667a&w=0&k=20&c=I55LaIslEBIiSid1TfgNB6o7AqB3WXUP_EOnu-7yywc="
-                alt="Customer profile user interface"
+                className="relative mx-auto"
+                width={490}
+                src="https://tailwindui.com/img/features/feature-example-2.png"
+                alt=""
               />
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
