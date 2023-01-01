@@ -42,7 +42,10 @@ export default function HomeHero() {
                     href=""
                     className="inline-flex rounded-lg bg-main-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-main-600 hover:bg-main-700 hover:ring-main-700"
                   >
-                    Start Creating <span className="opacity-80 font-normal">&nbsp;-&nbsp;It&apos;s Free</span>
+                    Start Creating{" "}
+                    <span className="opacity-80 font-normal">
+                      &nbsp;-&nbsp;It&apos;s Free
+                    </span>
                   </a>
                 </div>
               </div>

@@ -2,7 +2,6 @@ import Head from "next/head";
 import HomeCta from "../components/HomeCta";
 import HomeFeatures from "../components/HomeFeatures";
 import HomeHero from "../components/HomeHero";
-import HomeLogos from "../components/HomeLogos";
 import MainFooter from "../components/MainFooter";
 import MainHeader from "../components/MainHeader";
 
