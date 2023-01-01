@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>VideoGen - Free Instant Citation Generator</title>
+        <title>VideoGen - AI Video Generator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
