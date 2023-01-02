@@ -56,7 +56,7 @@ export default function MainHeader() {
                 </Link>
                 <Link
                   href={CTA.url}
-                  className={`ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-secondary-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary-700`}
+                  className={`ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-gray-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-700`}
                 >
                   {CTA.text}
                 </Link>
@@ -111,7 +111,7 @@ export default function MainHeader() {
                   </Link>
                   <Link
                     href="/"
-                    className={`flex w-full items-center justify-center rounded-md border border-transparent bg-secondary-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary-700`}
+                    className={`flex w-full items-center justify-center rounded-md border border-transparent bg-gray-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-700`}
                   >
                     {CTA?.text}
                   </Link>

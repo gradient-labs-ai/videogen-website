@@ -54,7 +54,7 @@ export default function HomeFeatures() {
             <span className="block">VideoGen is not a video editor.</span>
             <span className="block">
               It&apos;s a video{" "}
-              <span className="italic bg-gradient-to-br font-extrabold text-transparent bg-clip-text from-secondary-500 to-main-500">
+              <span className="bg-gradient-to-br font-extrabold text-transparent bg-clip-text from-orange-500 to-pink-600">
                 generator
               </span>
               .
