@@ -1,4 +1,5 @@
 import Head from "next/head";
+import CreateVideo from "../components/FeaturedTemplates";
 import HomeCta from "../components/HomeCta";
 import HomeFeatures from "../components/HomeFeatures";
 import HomeHero from "../components/HomeHero";
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="mt-8">
         <HomeHero />
         <HomeFeatures />
+        <CreateVideo />
         <HomeCta />
       </div>
 

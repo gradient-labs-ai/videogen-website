@@ -11,7 +11,7 @@ const navigation = [
 
 export default function HomeHero() {
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="isolate overflow-x-clip bg-white">
       <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
         <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">

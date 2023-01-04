@@ -47,7 +47,7 @@ const communicationFeatures = [
 
 export default function HomeFeatures() {
   return (
-    <div className="overflow-hidden bg-gray-50 py-16 lg:py-24">
+    <div className="relative py-16 lg:py-24 bg-gray-50">
       <div className="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
         <div className="relative">
           <h2 className="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
@@ -75,7 +75,7 @@ export default function HomeFeatures() {
               {transferFeatures.map((item) => (
                 <div key={item.id} className="relative">
                   <dt>
-                    <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-main-500 text-white">
+                    <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl  bg-main-100 text-main-600">
                       <item.icon className="h-8 w-8" aria-hidden="true" />
                     </div>
                     <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
@@ -116,7 +116,7 @@ export default function HomeFeatures() {
                 {communicationFeatures.map((item) => (
                   <div key={item.id} className="relative">
                     <dt>
-                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-main-500 text-white">
+                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-main-100 text-main-600">
                         <item.icon className="h-8 w-8" aria-hidden="true" />
                       </div>
                       <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
@@ -130,7 +130,6 @@ export default function HomeFeatures() {
                 ))}
               </dl>
             </div>
-
             <div className="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
               <img
                 className="relative mx-auto"
