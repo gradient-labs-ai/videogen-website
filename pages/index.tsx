@@ -18,7 +18,7 @@ export default function Home() {
       <div className="mt-8">
         <HomeHero />
         <HomeFeatures />
-        <CreateVideo />
+        {/*<CreateVideo />*/}
         <HomeCta />
       </div>
 

@@ -9,11 +9,11 @@ export default function FeaturedTemplates() {
   return (
     <div className="relative py-16 lg:py-24 bg-white">
       <div className="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
-        <h3 className="text-2xl font-bold leading-6 text-gray-900">VideoGen</h3>
-        <div className="border-t border-gray-200">
+        <h3 className="text-3xl font-bold leading-6 text-gray-900">Choose a bot to start</h3>
+        <div>
           <ul
             id="select-template"
-            className="grid grid-cols-3 gap-x-4 gap-y-8 py-5 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5 xl:gap-x-8"
+            className="grid grid-cols-3 gap-x-4 gap-y-8 mt-6 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5 xl:gap-x-8"
           >
             {featuredTemplatesList.map((template) => (
               <li
