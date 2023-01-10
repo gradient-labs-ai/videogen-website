@@ -12,11 +12,11 @@ interface CallToAction {
 export default function MainHeader() {
   const CTA: CallToAction = {
     text: "Get Started",
-    url: "/get-started",
+    url: "/signup",
   };
   const secondaryCTA: CallToAction = {
     text: "Sign in",
-    url: "/sign-in",
+    url: "/signin",
   };
 
   return (
