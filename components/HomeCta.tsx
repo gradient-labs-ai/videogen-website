@@ -9,7 +9,7 @@ export default function HomeCta() {
               <span className="block">No sign up required!</span>
             </h2>
             <a
-              href="https://app.videogen.io"
+              href="https://app.videogen.io/"
               className="mt-8 inline-flex items-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-main-600 shadow hover:bg-main-50"
             >
               Generate your first video

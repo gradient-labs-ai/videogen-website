@@ -39,7 +39,7 @@ export default function HomeHero() {
                 </p>
                 <div className="mt-6">
                   <a
-                    href=""
+                    href="https://app.videogen.io/"
                     className="inline-flex rounded-lg bg-main-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-main-600 hover:bg-main-700 hover:ring-main-700"
                   >
                     Start Creating{" "}

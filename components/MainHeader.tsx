@@ -12,11 +12,11 @@ interface CallToAction {
 export default function MainHeader() {
   const CTA: CallToAction = {
     text: "Get Started",
-    url: "/signup",
+    url: "https://app.videogen.io/",
   };
   const secondaryCTA: CallToAction = {
     text: "Sign in",
-    url: "/signin",
+    url: "https://app.videogen.io/signin",
   };
 
   return (
